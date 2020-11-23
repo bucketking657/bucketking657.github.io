@@ -5,7 +5,7 @@
 
 html{
 
-		background: url(Introsmall.jpg) no-repeat center center fixed;
+		background: url(../img/mainpagebg.jpg) no-repeat center center fixed;
 		  -webkit-background-size: cover;
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
@@ -13,8 +13,9 @@ html{
 		}
 
 .back {
+
 	text-align: center;
-	color: white;
+	color: black;
 	left:50%;
 	top: 30%;
 	transform: translate(-50%, -50%);
@@ -33,29 +34,33 @@ html{
     background: transparent;
 }
 
-.back h1 {
-	font-size: 3.5vw;
-	padding-bottom: 1em;
-	animation: text 3s 1;
-	letter-spacing: 8px;
-	margin-bottom: 20px;
-	position: relative;
-
+.bg{
+	opacity: 0.8;
+	margin-left: 15%;
+	margin-right: 15%;
+	background-color: white;
+	padding-top: 3em;
+	padding-bottom: 7em;
 }
 
-.back p{
+.bg h1 {
+	font-size: 3.5vw;
+	animation: text 3s 1;
+	letter-spacing: 8px;
+	padding-bottom: 1em;
+	position: relative;
+}
 
+.bg p{
 	display: block;
 	font-size: 1.75vw;
-	color: white;
-	top:  50%;
-	margin-left: 10em;
-	margin-right: 10em;
-	}
+	color: black;
+	top:  60%;
+}
 
 .button {
   position: absolute;
-	top:  65%;
+	top:  75%;
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
@@ -108,28 +113,26 @@ html{
 		letter-spacing: 8px;
 		margin-bottom: -10px;
 	}
-
 }
 
 </style>
 
 <body>
 	<div class= "back">
-		<h1>Welcome! I'm Joshua Shilts</h1>
-
-			<p>
-			A software deveolper from Lowell Masachusetts.
-			I have a passion for createing and designing high
-			quality cohert code that is tailoried
-  		to consiely serve the customers needs</p>
-
+		<div class ="bg">
+			<div style = "padding-top:4em;">
+				<h1>Welcome! I'm Joshua Shilts</h1>
+				<p>
+			I am a student at the University of Massachusetts Lowell who is seeking an internship in software development. I have a passion for software development in both web and mobile environments, with experience in database bases implementation including Rest APIs.</p>
+			</div>
 		</div>
-			<form action="mappage.htm" >
-  		<button type="submit" class = "button">
-				<span>Find Out More</span>
-			</button>
+	</div>
+	<div>
+		<form action="mappage.htm" >
+  	<button type="submit" class = "button">
+			<span>Find Out More</span>
+		</button>
   	</form>
 	</div>
-</div>
 </body>
 </html>
